@@ -4,8 +4,10 @@ To make the job of installing and managing the spark cluster Spark 1.4 comes wit
 
 # Requirements
 
-1) AWS account
-2) Linux machine 
+1) AWS account 
+
+2) Linux machine
+ 
 3) Spark 1.4 (can be downloaded from here http://spark.apache.org/downloads.html)
 
 
