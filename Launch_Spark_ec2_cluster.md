@@ -32,3 +32,22 @@ To make the job of installing and managing the spark cluster Spark 1.4 comes wit
 
 
 # Launching a cluster
+
+1)Use the following command to launch a cluster 
+
+./spark-ec2 -k<keypairname> -i ~/<keypair.pem>  --region=us-west-2 --zone=us-west-2b launch spark-test-cluster
+	
+	Note : 	1)Check if credentials has access to launch clusters
+
+			2)The --region= parameter should have the region to which your keypair belongs to
+	
+			3)May get errors if the --zone= doesnt have enough resources
+	
+			4)First time execution of this may download some files to your local machine 
+
+2)After the cluster is launched ,access thye web ui at http://<master-dns>:8080
+
+3)After the cluster is launched login to the cluster with the following command
+
+./spark-ec2 -k <keypairname> -i ~/<keypair.pem> --region=us-west-2 login spark-test-cluster
+
